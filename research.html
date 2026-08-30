@@ -1,159 +1,64 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Research | Heriberto Patiño Luna</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+    <title>
+        Research | Heriberto Patiño Luna
+    </title>
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.6;
-            color: #222;
-            background: #f8fafc;
-        }
+    <link
+        rel="stylesheet"
+        href="style.css">
 
-        nav {
-            background: #0f172a;
-            padding: 18px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        nav .name a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.2rem;
-            font-weight: bold;
-        }
-
-        nav a {
-            color: #cbd5e1;
-            text-decoration: none;
-            margin-left: 25px;
-        }
-
-        nav a:hover {
-            color: white;
-        }
-
-        .page-header {
-            background: linear-gradient(135deg, #0f172a, #1e3a5f);
-            color: white;
-            padding: 70px 10%;
-        }
-
-        .page-header h1 {
-            font-size: 3.2rem;
-            margin-bottom: 10px;
-        }
-
-        .page-header p {
-            max-width: 750px;
-            color: #dbeafe;
-            font-size: 1.15rem;
-        }
-
-        .content {
-            max-width: 1200px;
-            margin: auto;
-            padding: 70px 10%;
-        }
-
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 30px;
-        }
-
-        .card {
-            background: white;
-            border-radius: 12px;
-            padding: 30px;
-            box-shadow: 0 4px 18px rgba(0,0,0,0.08);
-        }
-
-        .card h2 {
-            margin-bottom: 6px;
-        }
-
-        .institution {
-            color: #64748b;
-            margin-bottom: 16px;
-        }
-
-        .card p {
-            margin-bottom: 18px;
-        }
-
-        .tag {
-            display: inline-block;
-            background: #e2e8f0;
-            padding: 5px 10px;
-            margin: 5px 4px 5px 0;
-            border-radius: 5px;
-            font-size: 0.8rem;
-        }
-
-        .project-link {
-            display: block;
-            margin-top: 20px;
-            color: #1d4ed8;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .project-link:hover {
-            text-decoration: underline;
-        }
-
-        @media (max-width: 700px) {
-            .page-header h1 {
-                font-size: 2.5rem;
-            }
-
-            nav {
-                padding: 18px 5%;
-            }
-
-            nav a {
-                margin-left: 12px;
-            }
-
-            .projects {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
 </head>
 
+
 <body>
+
 
 <nav>
 
     <div class="name">
+
         <a href="index.html">
             Heriberto Patiño Luna
         </a>
+
     </div>
 
+
     <div class="links">
-        <a href="about.html">About</a>
-        <a href="research.html">Research</a>
-        <a href="skills.html">Skills</a>
-        <a href="contact.html">Contact</a>
+
+        <a href="about.html">
+            About
+        </a>
+
+        <a
+            class="active"
+            href="research.html">
+            Research
+        </a>
+
+        <a href="skills.html">
+            Skills
+        </a>
+
+        <a href="contact.html">
+            Contact
+        </a>
+
     </div>
 
 </nav>
+
 
 
 <header class="page-header">
@@ -161,151 +66,212 @@
     <h1>Research</h1>
 
     <p>
-        My research focuses on understanding physical mechanisms through
-        a combination of computational modeling, experiments, materials
-        synthesis, characterization, and data analysis.
+
+        My research combines computational modeling and experiment
+        to investigate physical mechanisms across materials science,
+        condensed matter physics, geophysics, and complex systems.
+
     </p>
 
 </header>
 
 
+
 <main class="content">
 
-    <div class="projects">
+
+<div class="projects">
 
 
-        <div class="card">
+    <div class="card">
 
-            <h2>PFAS Photocatalysis & MoO₃</h2>
+        <h2>
+            PFAS Photocatalysis & MoO₃
+        </h2>
 
-            <div class="institution">
-                Universidad Complutense de Madrid / UW–Whitewater
-            </div>
+        <div class="institution">
 
-            <p>
-                Investigation of semiconductor nanomaterials for photocatalytic
-                degradation of PFAS, combined with multiphysics modeling of
-                Joule-heating synthesis mechanisms.
-            </p>
-
-            <span class="tag">COMSOL</span>
-            <span class="tag">SEM</span>
-            <span class="tag">Raman</span>
-            <span class="tag">XRD</span>
-            <span class="tag">Photocatalysis</span>
-
-            <a class="project-link" href="projects/photocatalysis.html">
-                View Project →
-            </a>
+            Universidad Complutense de Madrid /
+            University of Wisconsin–Whitewater
 
         </div>
 
+        <p>
 
-        <div class="card">
+            Investigation of semiconductor nanomaterials for
+            photocatalytic degradation of PFAS combined with
+            multiphysics modeling of Joule-heating synthesis
+            mechanisms.
 
-            <h2>Spin-Wave Propagation in CrSBr</h2>
+        </p>
 
-            <div class="institution">
-                University of California, Santa Barbara
-            </div>
+        <span class="tag">COMSOL</span>
+        <span class="tag">SEM</span>
+        <span class="tag">Raman</span>
+        <span class="tag">XRD</span>
+        <span class="tag">Photocatalysis</span>
 
-            <p>
-                Experimental and computational study of spin-wave propagation
-                using pump-probe microscopy, numerical simulations, and
-                fabricated thickness interfaces.
-            </p>
+        <a
+            class="project-link"
+            href="projects/photocatalysis.html">
 
-            <span class="tag">FDTD</span>
-            <span class="tag">Python</span>
-            <span class="tag">Pump-Probe</span>
-            <span class="tag">KLayout</span>
+            View Project →
 
-            <a class="project-link" href="projects/spin-waves.html">
-                View Project →
-            </a>
-
-        </div>
-
-
-        <div class="card">
-
-            <h2>Basalt Rheology</h2>
-
-            <div class="institution">
-                Penn State University
-            </div>
-
-            <p>
-                Experimental deformation measurements of basalt combined with
-                elastic and viscoelastic modeling to investigate nonlinear
-                mechanical behavior.
-            </p>
-
-            <span class="tag">Python</span>
-            <span class="tag">MCMC</span>
-            <span class="tag">Optuna</span>
-            <span class="tag">Rheology</span>
-
-            <a class="project-link" href="projects/basalt.html">
-                View Project →
-            </a>
-
-        </div>
-
-
-        <div class="card">
-
-            <h2>Computational Neuroscience</h2>
-
-            <div class="institution">
-                UW–Whitewater
-            </div>
-
-            <p>
-                Computational modeling of olfactory bulb neural activity,
-                including autocorrelation analysis and information-based
-                approaches for studying network behavior.
-            </p>
-
-            <span class="tag">Python</span>
-            <span class="tag">Simulation</span>
-            <span class="tag">Data Analysis</span>
-
-            <a class="project-link" href="projects/neuroscience.html">
-                View Project →
-            </a>
-
-        </div>
-
-
-        <div class="card">
-
-            <h2>Slope Failure Dynamics</h2>
-
-            <div class="institution">
-                UW–Whitewater
-            </div>
-
-            <p>
-                Experimental study of slope deformation using multimodal
-                sensors to investigate creep, micro-failure behavior, and
-                sensor-position sensitivity.
-            </p>
-
-            <span class="tag">IGOR Pro</span>
-            <span class="tag">Sensors</span>
-            <span class="tag">Experimental Physics</span>
-
-            <a class="project-link" href="projects/slope-failure.html">
-                View Project →
-            </a>
-
-        </div>
-
+        </a>
 
     </div>
 
+
+
+    <div class="card">
+
+        <h2>
+            Spin-Wave Propagation in CrSBr
+        </h2>
+
+        <div class="institution">
+            University of California, Santa Barbara
+        </div>
+
+        <p>
+
+            Experimental and computational investigation of spin-wave
+            propagation using pump-probe microscopy, numerical
+            simulations, and fabricated thickness interfaces.
+
+        </p>
+
+        <span class="tag">FDTD</span>
+        <span class="tag">Python</span>
+        <span class="tag">Pump-Probe</span>
+        <span class="tag">KLayout</span>
+
+        <a
+            class="project-link"
+            href="projects/spin-waves.html">
+
+            View Project →
+
+        </a>
+
+    </div>
+
+
+
+    <div class="card">
+
+        <h2>
+            Basalt Rheology
+        </h2>
+
+        <div class="institution">
+            Pennsylvania State University
+        </div>
+
+        <p>
+
+            Experimental deformation measurements combined with
+            elastic and viscoelastic modeling to investigate
+            nonlinear mechanical behavior in basalt.
+
+        </p>
+
+        <span class="tag">Python</span>
+        <span class="tag">MCMC</span>
+        <span class="tag">Optuna</span>
+        <span class="tag">Rheology</span>
+
+        <a
+            class="project-link"
+            href="projects/basalt.html">
+
+            View Project →
+
+        </a>
+
+    </div>
+
+
+
+    <div class="card">
+
+        <h2>
+            Computational Neuroscience
+        </h2>
+
+        <div class="institution">
+            University of Wisconsin–Whitewater
+        </div>
+
+        <p>
+
+            Computational modeling of olfactory bulb neural activity
+            using simulation, autocorrelation analysis, and
+            information-based methods.
+
+        </p>
+
+        <span class="tag">Python</span>
+        <span class="tag">Simulation</span>
+        <span class="tag">Data Analysis</span>
+
+        <a
+            class="project-link"
+            href="projects/neuroscience.html">
+
+            View Project →
+
+        </a>
+
+    </div>
+
+
+
+    <div class="card">
+
+        <h2>
+            Slope Failure Dynamics
+        </h2>
+
+        <div class="institution">
+            University of Wisconsin–Whitewater
+        </div>
+
+        <p>
+
+            Experimental investigation of slope deformation using
+            multimodal sensors to study creep, micro-failure behavior,
+            and sensor-position sensitivity.
+
+        </p>
+
+        <span class="tag">IGOR Pro</span>
+        <span class="tag">Sensors</span>
+        <span class="tag">Data Analysis</span>
+
+        <a
+            class="project-link"
+            href="projects/slope-failure.html">
+
+            View Project →
+
+        </a>
+
+    </div>
+
+
+</div>
+
 </main>
+
+
+
+<footer>
+
+    © 2026 Heriberto Patiño Luna
+
+</footer>
+
 
 </body>
 
