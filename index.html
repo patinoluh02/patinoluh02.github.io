@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Heriberto Patiño Luna | Research Portfolio</title>
 
     <style>
+
         * {
             box-sizing: border-box;
             margin: 0;
@@ -19,6 +22,8 @@
             background: #f8fafc;
         }
 
+        /* NAVIGATION */
+
         nav {
             background: #0f172a;
             padding: 18px 8%;
@@ -27,8 +32,9 @@
             align-items: center;
         }
 
-        nav .name {
+        nav .name a {
             color: white;
+            text-decoration: none;
             font-size: 1.2rem;
             font-weight: bold;
         }
@@ -43,42 +49,59 @@
             color: white;
         }
 
+
+        /* HERO */
+
         .hero {
-            min-height: 70vh;
+            min-height: calc(100vh - 65px);
+
             display: flex;
             flex-direction: column;
             justify-content: center;
+
             padding: 80px 10%;
-            background: linear-gradient(135deg, #0f172a, #1e3a5f);
+
+            background: linear-gradient(
+                135deg,
+                #0f172a,
+                #1e3a5f
+            );
+
             color: white;
         }
 
         .hero h1 {
-            font-size: 3.5rem;
+            font-size: 4rem;
             margin-bottom: 10px;
         }
 
         .hero h2 {
             font-weight: normal;
             color: #93c5fd;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
 
         .hero p {
-            max-width: 700px;
+            max-width: 750px;
             font-size: 1.2rem;
             color: #dbeafe;
         }
 
+
+        /* BUTTONS */
+
         .buttons {
-            margin-top: 30px;
+            margin-top: 35px;
         }
 
         .button {
             display: inline-block;
+
             padding: 12px 22px;
             margin-right: 10px;
+
             border-radius: 6px;
+
             text-decoration: none;
             font-weight: bold;
         }
@@ -93,193 +116,122 @@
             color: white;
         }
 
-        section {
-            padding: 70px 10%;
-            max-width: 1200px;
-            margin: auto;
+        .button:hover {
+            opacity: 0.9;
         }
 
-        section h2 {
-            font-size: 2rem;
-            margin-bottom: 25px;
-        }
 
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 25px;
-        }
-
-        .card {
-            background: white;
-            border-radius: 10px;
-            padding: 25px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-        }
-
-        .card h3 {
-            margin-bottom: 10px;
-        }
-
-        .tag {
-            display: inline-block;
-            background: #e2e8f0;
-            padding: 4px 9px;
-            margin: 8px 4px 0 0;
-            border-radius: 4px;
-            font-size: 0.8rem;
-        }
-
-        footer {
-            background: #0f172a;
-            color: #cbd5e1;
-            text-align: center;
-            padding: 30px;
-        }
+        /* MOBILE */
 
         @media (max-width: 700px) {
+
             .hero h1 {
-                font-size: 2.5rem;
+                font-size: 2.7rem;
             }
 
-            nav .links {
-                display: none;
+            .hero {
+                padding: 60px 8%;
+            }
+
+            nav {
+                padding: 18px 5%;
+            }
+
+            nav a {
+                margin-left: 12px;
             }
         }
+
     </style>
 </head>
 
+
 <body>
 
+
+<!-- NAVIGATION -->
+
 <nav>
-    <div class="name">Heriberto Patiño Luna</div>
+
+    <div class="name">
+        <a href="index.html">
+            Heriberto Patiño Luna
+        </a>
+    </div>
+
 
     <div class="links">
-        <a href="about.html">About</a>
-        <a href="research.html">Research</a>
-        <a href="skills.html">Skills</a>
-        <a href="contact.html">Contact</a>
+
+        <a href="about.html">
+            About
+        </a>
+
+        <a href="research.html">
+            Research
+        </a>
+
+        <a href="skills.html">
+            Skills
+        </a>
+
+        <a href="contact.html">
+            Contact
+        </a>
+
     </div>
+
 </nav>
 
 
+
+<!-- HOMEPAGE -->
+
 <div class="hero">
 
-    <h1>Heriberto Patiño Luna</h1>
+    <h1>
+        Heriberto Patiño Luna
+    </h1>
 
-    <h2>Physics • Materials Science • Computational Research</h2>
+
+    <h2>
+        Physics • Materials Science • Computational & Experimental Research
+    </h2>
+
 
     <p>
-        Undergraduate researcher interested in understanding materials through
-        the combination of computational modeling, experiments, synthesis,
+
+        I investigate physical mechanisms in materials through the
+        combination of computational modeling, experiments, synthesis,
         characterization, and fundamental physics.
+
     </p>
 
+
     <div class="buttons">
-        <a class="button primary" href="#research">View Research</a>
-        <a class="button secondary" href="#">Download CV</a>
+
+        <a
+            class="button primary"
+            href="research.html">
+
+            View Research
+
+        </a>
+
+
+        <a
+            class="button secondary"
+            href="cv.pdf"
+            target="_blank">
+
+            View CV
+
+        </a>
+
     </div>
 
 </div>
 
 
-<section id="about">
-
-    <h2>About Me</h2>
-
-    <p>
-        I am interested in materials science research that combines computation
-        and experiment to understand physical mechanisms and develop new
-        technologies.
-    </p>
-
-</section>
-
-
-<section id="research">
-
-    <h2>Research</h2>
-
-    <div class="projects">
-
-        <div class="card">
-            <h3>Research Project 1</h3>
-
-            <p>
-                Brief explanation of the scientific problem, methods used,
-                and major results.
-            </p>
-
-            <span class="tag">Python</span>
-            <span class="tag">Simulation</span>
-        </div>
-
-
-        <div class="card">
-            <h3>Research Project 2</h3>
-
-            <p>
-                Brief explanation of the scientific problem, methods used,
-                and major results.
-            </p>
-
-            <span class="tag">Experiment</span>
-            <span class="tag">Characterization</span>
-        </div>
-
-
-        <div class="card">
-            <h3>Research Project 3</h3>
-
-            <p>
-                Brief explanation of the scientific problem, methods used,
-                and major results.
-            </p>
-
-            <span class="tag">COMSOL</span>
-            <span class="tag">Materials Science</span>
-        </div>
-
-    </div>
-
-</section>
-
-
-<section id="skills">
-
-    <h2>Technical Skills</h2>
-
-    <p>
-        Python • COMSOL • MATLAB • Mathematica • Materials Characterization •
-        Experimental Physics • Scientific Computing
-    </p>
-
-</section>
-
-
-<section id="contact">
-
-    <h2>Contact</h2>
-
-    <p>
-        Email: your-email@example.com
-    </p>
-
-    <p>
-        GitHub:
-        <a href="https://github.com/patinoluh02">
-            github.com/patinoluh02
-        </a>
-    </p>
-
-</section>
-
-
-<footer>
-
-    <p>© 2026 Heriberto Patiño Luna</p>
-
-</footer>
-
 </body>
+
 </html>
