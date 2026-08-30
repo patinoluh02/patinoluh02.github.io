@@ -1,0 +1,410 @@
+/* ==============================
+   GLOBAL
+   ============================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.65;
+    color: #1e293b;
+    background: #f8fafc;
+}
+
+a {
+    color: #2563eb;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* ==============================
+   NAVIGATION
+   ============================== */
+
+nav {
+    background: #0f172a;
+    padding: 18px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .name a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 0;
+}
+
+nav .links {
+    display: flex;
+    align-items: center;
+}
+
+nav .links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    margin-left: 28px;
+    transition: 0.2s;
+}
+
+nav .links a:hover {
+    color: white;
+}
+
+nav .active {
+    color: white !important;
+}
+
+
+/* ==============================
+   HOMEPAGE HERO
+   ============================== */
+
+.hero {
+    min-height: calc(100vh - 65px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 80px 10%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0f172a,
+            #1e3a5f
+        );
+
+    color: white;
+}
+
+.hero h1 {
+    font-size: clamp(3rem, 7vw, 5rem);
+    line-height: 1.05;
+    margin-bottom: 18px;
+}
+
+.hero h2 {
+    font-size: 1.6rem;
+    font-weight: normal;
+    color: #93c5fd;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    max-width: 780px;
+    font-size: 1.2rem;
+    color: #dbeafe;
+}
+
+
+/* ==============================
+   BUTTONS
+   ============================== */
+
+.buttons {
+    margin-top: 35px;
+}
+
+.button {
+    display: inline-block;
+
+    padding: 12px 22px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+}
+
+.primary {
+    background: white;
+    color: #0f172a;
+}
+
+.secondary {
+    border: 1px solid white;
+    color: white;
+}
+
+
+/* ==============================
+   PAGE HEADERS
+   ============================== */
+
+.page-header {
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #1e3a5f
+    );
+
+    color: white;
+    padding: 80px 10%;
+}
+
+.page-header h1 {
+    font-size: clamp(2.7rem, 6vw, 4rem);
+    margin-bottom: 12px;
+}
+
+.page-header p {
+    max-width: 800px;
+    color: #dbeafe;
+    font-size: 1.15rem;
+}
+
+
+/* ==============================
+   GENERAL CONTENT
+   ============================== */
+
+.content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 70px 10%;
+}
+
+.content h2 {
+    font-size: 2rem;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    color: #0f172a;
+}
+
+.content h3 {
+    margin-bottom: 10px;
+    color: #0f172a;
+}
+
+.content p {
+    margin-bottom: 18px;
+}
+
+.intro {
+    max-width: 850px;
+    font-size: 1.15rem;
+}
+
+
+/* ==============================
+   CARDS / RESEARCH
+   ============================== */
+
+.projects {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(320px, 1fr));
+
+    gap: 30px;
+}
+
+.card {
+    background: white;
+
+    border-radius: 12px;
+
+    padding: 30px;
+
+    box-shadow:
+        0 4px 18px rgba(0,0,0,0.08);
+
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.12);
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.institution {
+    color: #64748b;
+    font-size: 0.95rem;
+    margin-bottom: 16px;
+}
+
+.tag {
+    display: inline-block;
+
+    background: #e2e8f0;
+    color: #334155;
+
+    padding: 5px 10px;
+    margin: 5px 4px 5px 0;
+
+    border-radius: 5px;
+
+    font-size: 0.8rem;
+}
+
+.project-link {
+    display: block;
+
+    margin-top: 20px;
+
+    color: #1d4ed8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+
+/* ==============================
+   SKILLS
+   ============================== */
+
+.skill-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 25px;
+
+    margin-top: 30px;
+}
+
+.skill-box {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 15px rgba(0,0,0,0.07);
+}
+
+.skill-box h2 {
+    margin-top: 0;
+    font-size: 1.35rem;
+}
+
+.skill-box ul {
+    padding-left: 20px;
+}
+
+
+/* ==============================
+   CONTACT
+   ============================== */
+
+.contact-box {
+    background: white;
+
+    max-width: 700px;
+
+    padding: 35px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 4px 18px rgba(0,0,0,0.08);
+}
+
+.contact-item {
+    margin-bottom: 20px;
+}
+
+.contact-item strong {
+    display: block;
+    color: #0f172a;
+}
+
+
+/* ==============================
+   FOOTER
+   ============================== */
+
+footer {
+    background: #0f172a;
+    color: #94a3b8;
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+
+/* ==============================
+   MOBILE
+   ============================== */
+
+@media (max-width: 750px) {
+
+    nav {
+        padding: 16px 5%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav .links {
+        margin-top: 10px;
+        flex-wrap: wrap;
+    }
+
+    nav .links a {
+        margin-left: 0;
+        margin-right: 18px;
+        margin-top: 5px;
+    }
+
+    .hero {
+        padding: 70px 8%;
+    }
+
+    .hero h2 {
+        font-size: 1.25rem;
+    }
+
+    .page-header {
+        padding: 60px 8%;
+    }
+
+    .content {
+        padding: 50px 8%;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+}
