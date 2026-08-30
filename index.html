@@ -70,22 +70,27 @@
         /* HERO */
 
         .hero {
-            min-height: calc(100vh - 65px);
+    min-height: calc(100vh - 65px);
 
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-            padding: 80px 10%;
+    padding: 80px 10%;
 
-            background: linear-gradient(
-                135deg,
-                #0f172a,
-                #1e3a5f
-            );
+    background:
+        linear-gradient(
+            rgba(15, 23, 42, 0.65),
+            rgba(15, 23, 42, 0.65)
+        ),
+        url("images/background.jpg");
 
-            color: white;
-        }
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+}
 
         .hero h1 {
             font-size: 4rem;
