@@ -439,3 +439,26 @@ footer {
 
     line-height: 1.8;
 }
+
+/* ==============================
+   SOCIAL ICONS
+   ============================== */
+
+.social-link {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.social-icon {
+    width: 45px;
+    height: 45px;
+
+    object-fit: contain;
+
+    transition: 0.2s;
+}
+
+.social-icon:hover {
+    transform: scale(1.12);
+    opacity: 0.8;
+}
