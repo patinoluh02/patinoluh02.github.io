@@ -9,13 +9,16 @@
 
     <title>Heriberto Patiño Luna | Research Portfolio</title>
 
-
-    <!-- Shared styling for the entire website -->
+    <!-- Shared website styling -->
     <link rel="stylesheet" href="style.css">
 
 
-    <!-- Styling used ONLY on the homepage -->
+    <!-- Homepage-only styling -->
     <style>
+
+        /* =========================
+           HERO
+           ========================= */
 
         .home-hero {
 
@@ -35,9 +38,7 @@
                 url("image/background.jpg");
 
             background-size: cover;
-
             background-position: center center;
-
             background-repeat: no-repeat;
 
             color: white;
@@ -77,10 +78,12 @@
             line-height: 1.7;
 
             color: white;
-
-            margin-bottom: 0;
         }
 
+
+        /* =========================
+           HERO BUTTONS
+           ========================= */
 
         .home-buttons {
 
@@ -95,7 +98,6 @@
             padding: 12px 24px;
 
             margin-right: 12px;
-
             margin-bottom: 10px;
 
             border-radius: 6px;
@@ -132,15 +134,185 @@
         }
 
 
-        @media (max-width: 750px) {
+
+        /* =========================
+           ABOUT ME
+           ========================= */
+
+        .about-home {
+
+            padding: 100px 10%;
+
+            background: #ffffff;
+        }
+
+
+        .about-container {
+
+            max-width: 1200px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns: 1.4fr 1fr;
+
+            gap: 80px;
+
+            align-items: center;
+        }
+
+
+        .about-text .small-title {
+
+            color: #2563eb;
+
+            font-size: 0.9rem;
+
+            font-weight: bold;
+
+            letter-spacing: 2px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 10px;
+        }
+
+
+        .about-text h2 {
+
+            font-size: clamp(2.5rem, 5vw, 4rem);
+
+            line-height: 1.1;
+
+            color: #0f172a;
+
+            margin-bottom: 30px;
+        }
+
+
+        .about-text p {
+
+            font-size: 1.12rem;
+
+            line-height: 1.85;
+
+            color: #475569;
+
+            margin-bottom: 20px;
+        }
+
+
+        .about-image img {
+
+            width: 100%;
+
+            display: block;
+
+            border-radius: 12px;
+
+            box-shadow:
+                0 12px 35px rgba(0, 0, 0, 0.15);
+        }
+
+
+        .image-caption {
+
+            margin-top: 10px;
+
+            font-size: 0.85rem;
+
+            color: #64748b;
+
+            text-align: center;
+        }
+
+
+
+        /* =========================
+           WHAT I DO
+           ========================= */
+
+        .what-i-do {
+
+            padding: 90px 10%;
+
+            background: #f8fafc;
+        }
+
+
+        .what-container {
+
+            max-width: 1200px;
+
+            margin: auto;
+        }
+
+
+        .what-container > h2 {
+
+            font-size: 2.8rem;
+
+            color: #0f172a;
+
+            margin-bottom: 45px;
+        }
+
+
+        .research-areas {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(auto-fit, minmax(250px, 1fr));
+
+            gap: 25px;
+        }
+
+
+        .research-area {
+
+            background: white;
+
+            padding: 30px;
+
+            border-radius: 10px;
+
+            box-shadow:
+                0 4px 18px rgba(0, 0, 0, 0.07);
+        }
+
+
+        .research-area h3 {
+
+            color: #0f172a;
+
+            margin-bottom: 12px;
+
+            font-size: 1.3rem;
+        }
+
+
+        .research-area p {
+
+            color: #64748b;
+
+            line-height: 1.7;
+        }
+
+
+
+        /* =========================
+           MOBILE
+           ========================= */
+
+        @media (max-width: 800px) {
 
             .home-hero {
 
                 min-height: 75vh;
 
                 padding: 60px 8%;
-
-                background-position: center center;
             }
 
 
@@ -153,6 +325,26 @@
             .home-hero p {
 
                 font-size: 1.05rem;
+            }
+
+
+            .about-container {
+
+                grid-template-columns: 1fr;
+
+                gap: 40px;
+            }
+
+
+            .about-home {
+
+                padding: 70px 8%;
+            }
+
+
+            .what-i-do {
+
+                padding: 70px 8%;
             }
 
         }
@@ -183,11 +375,15 @@
 
     <div class="links">
 
+        <a href="#about">
+            About Me
+        </a>
+
         <a href="portfolio.html">
             Portfolio
         </a>
 
-        <a href="resume.pdf" target="_blank">
+        <a href="cv.pdf" target="_blank">
             Resume
         </a>
 
@@ -202,38 +398,251 @@
 
 
 <!-- =========================
-     HOMEPAGE
+     HERO
      ========================= -->
 
 <main class="home-hero">
-
 
     <h1>
         Heriberto Patiño Luna
     </h1>
 
 
-</main
+    <h2>
+        Physics • Materials Science • Computational & Experimental Research
+    </h2>
+
+
+    <p>
+
+        My interest in materials comes from a desire to understand how
+        a material's structure and its resulting properties lead to
+        observed physical behavior.
+
+    </p>
+
+
+    <div class="home-buttons">
+
+        <a
+            class="home-button home-primary"
+            href="portfolio.html">
+
+            View Portfolio
+
+        </a>
+
+
+        <a
+            class="home-button home-secondary"
+            href="cv.pdf"
+            target="_blank">
+
+            View Resume
+
+        </a>
+
+    </div>
+
+</main>
+
 
 
 <!-- =========================
-     SECOND SECTION
+     ABOUT ME
      ========================= -->
 
-<section class="home-section">
+<section
+    class="about-home"
+    id="about">
 
-    <h2>
-        About My Research
-    </h2>
+    <div class="about-container">
 
-    <p>
-        I am interested in understanding how the structure and properties
-        of materials determine their physical behavior. My research combines
-        computational modeling, experimentation, synthesis, and materials
-        characterization.
-    </p>
+
+        <!-- TEXT -->
+
+        <div class="about-text">
+
+            <div class="small-title">
+                About Me
+            </div>
+
+
+            <h2>
+                Understanding Materials Through Experiment and Computation.
+            </h2>
+
+
+            <p>
+
+                I am a physics and geography student interested in
+                materials science and the physical mechanisms that
+                determine how materials behave.
+
+            </p>
+
+
+            <p>
+
+                My research experience has taken me across experimental
+                physics, materials characterization, numerical modeling,
+                and scientific computing. I have worked on problems ranging
+                from semiconductor nanomaterials and photocatalysis to
+                spin-wave propagation, rock rheology, and complex systems.
+
+            </p>
+
+
+            <p>
+
+                What interests me most is the interaction between computation
+                and experiment. I use modeling to investigate mechanisms that
+                may be difficult to observe directly, while experiments and
+                characterization provide the physical evidence needed to test
+                those models.
+
+            </p>
+
+
+            <a
+                class="project-link"
+                href="portfolio.html">
+
+                Explore My Work →
+
+            </a>
+
+        </div>
+
+
+
+        <!-- IMAGE -->
+
+        <div class="about-image">
+
+            <img
+                src="image/about.jpg"
+                alt="Heriberto Patiño Luna conducting research">
+
+            <div class="image-caption">
+                Research and experimental work
+            </div>
+
+        </div>
+
+
+    </div>
 
 </section>
+
+
+
+<!-- =========================
+     WHAT I DO
+     ========================= -->
+
+<section class="what-i-do">
+
+    <div class="what-container">
+
+
+        <h2>
+            What I Do
+        </h2>
+
+
+        <div class="research-areas">
+
+
+            <div class="research-area">
+
+                <h3>
+                    Computational Modeling
+                </h3>
+
+                <p>
+
+                    Numerical and multiphysics modeling using Python,
+                    COMSOL, FDTD methods, optimization, and statistical
+                    parameter estimation.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="research-area">
+
+                <h3>
+                    Experimental Physics
+                </h3>
+
+                <p>
+
+                    Designing experiments, building and automating
+                    experimental systems, acquiring measurements,
+                    and analyzing physical behavior.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="research-area">
+
+                <h3>
+                    Materials Characterization
+                </h3>
+
+                <p>
+
+                    Investigating material structure and properties
+                    using techniques including SEM, Raman spectroscopy,
+                    XRD, and optical spectroscopy.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="research-area">
+
+                <h3>
+                    Materials Research
+                </h3>
+
+                <p>
+
+                    Studying how structure, composition, defects,
+                    interfaces, and external stimuli influence
+                    material properties and performance.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     FOOTER
+     ========================= -->
+
+<footer>
+
+    © 2026 Heriberto Patiño Luna
+
+</footer>
 
 
 </body>
