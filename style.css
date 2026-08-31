@@ -445,20 +445,31 @@ footer {
    ============================== */
 
 .social-link {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
     margin-top: 10px;
+
+    text-decoration: none;
 }
 
-.social-icon {
-    width: 45px;
-    height: 45px;
+
+.contact-item .social-icon {
+    width: 32px;
+    height: 32px;
+
+    max-width: 32px;
 
     object-fit: contain;
 
-    transition: 0.2s;
+    transition:
+        transform 0.2s,
+        opacity 0.2s;
 }
 
-.social-icon:hover {
+
+.contact-item .social-icon:hover {
     transform: scale(1.12);
     opacity: 0.8;
 }
